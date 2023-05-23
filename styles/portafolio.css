@@ -1,3 +1,13 @@
-h1 {
-  color: white;
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #272142;
+  --main-color: #202020;
+}
+
+body {
+  font-family: Roboto;
+}
+
+.black-and-white {
+  background-image: url("white.jpg");
 }
