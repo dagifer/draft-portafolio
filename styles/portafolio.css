@@ -2,12 +2,44 @@
   --primary-color: #ffffff;
   --secondary-color: #272142;
   --main-color: #202020;
+  --main-font-family: "Montserrat";
+  --additional-font-family: "Roboto";
 }
 
 body {
   font-family: Roboto;
 }
 
-.black-and-white {
-  background-image: url("white.jpg");
+.hero {
+  background-color: var(--secondary-color);
+  text-align: center;
+  color: var(--primary-color);
+  font-family: var(--main-font-family);
+  padding: 140px 0;
+}
+.hero h1 {
+  font-size: 72px;
+  font-style: bold;
+  line-height: 84px;
+  text-transform: uppercase;
+}
+
+.hero h2 {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 19px;
+  line-height: 53px;
+}
+
+.btn-light {
+  background: var(--primary-color);
+  border-radius: 50px;
+  padding: 18px 30px;
+  font-family: var(--additional-font-family);
+  font-size: 14px;
+  text-transform: uppercase;
 }
