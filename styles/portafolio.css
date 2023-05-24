@@ -7,7 +7,9 @@
 }
 
 body {
-  font-family: Roboto;
+  font-family: var(--main-font-family)
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .hero {
@@ -17,7 +19,7 @@ body {
   font-family: var(--main-font-family);
   padding: 140px 0;
 }
-.hero h1 {
+h1 {
   font-size: 72px;
   font-style: bold;
   line-height: 84px;
@@ -42,4 +44,49 @@ body {
   font-family: var(--additional-font-family);
   font-size: 14px;
   text-transform: uppercase;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+p {
+  font-style: 16px;
+  line-height: 30px;
+}
+
+.btn-light-outline {
+  background: var(--secondary-color);
+  border-radius: 50px;
+  padding: 18px 30px;
+  font-family: var(--additional-font-family);
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.project-description{
+  padding: 20px 0 0 80px;
+}
+
+.project-ilustration{
+  padding: 20px 80px 0 0px;
+}
+
+
+@media (max-width: 900px){
+  .project-description{
+    padding: 0;
+    text-align: center;
+  }
+  .project-ilustration{
+  padding: 0;
+  text-align: center;
+  }
+  h1, h2{
+  font-size: 45px;
+  }
+  .hero {
+  padding: 50px 0;
+  }
 }
