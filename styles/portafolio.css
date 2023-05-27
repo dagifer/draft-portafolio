@@ -129,6 +129,37 @@ p {
 .description-paragraph{
   opacity: 0.5;
 }
+.logo{
+  max-height: 80px;
+
+}
+nav {
+  padding: 0;
+  background-color: var(--secondary-color) ;
+}
+nav ul {
+  padding: 10px;
+  margin: 10px;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  margin-left: 15px;
+}
+
+nav a{
+text-decoration: none;
+color: var(--primary-color);
+transition: all 100ms ease-in-out;
+
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--primary-color);
+  opacity: 0.5;
+}
 
 @media (max-width: 900px){
   .project-description{
@@ -151,4 +182,8 @@ p {
 
   .content-container{
   padding: 20px;
+}
+  nav ul {
+    padding: 0;
+  }
 }
