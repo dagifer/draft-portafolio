@@ -8,7 +8,7 @@
 
 body {
   font-family: var(--main-font-family)
-  background-color: var(--primary-color);
+  background-color: var(var(--secondary-color));
   color: var(--secondary-color);
 }
 
@@ -43,6 +43,7 @@ h1{
   padding: 50px 100px;
   background-color: var(--secondary-color);
   color: var(--primary-color);
+  background-clip: var(--secondary-color);
 }
 
 .contact-details{
@@ -203,6 +204,14 @@ footer .social-link a {
 }
 
 footer .social-link:hover {
+  color: var(--primary-color);
+}
+
+.scenario {
+  background: var(--secondary-color);
+}
+
+.post {
   color: var(--primary-color);
 }
 
